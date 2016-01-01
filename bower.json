@@ -1,0 +1,16 @@
+{
+  "name": "es6",
+  "version": "0.0.0",
+  "authors": [
+    "Ariel Robles <arobles@switchfly.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {}
+}

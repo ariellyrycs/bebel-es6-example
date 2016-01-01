@@ -1,0 +1,33 @@
+{
+  "src": {
+    "css": "./app/styles/**/*.stylus",
+    "jade": "./app/views/**/*.jade",
+    "watch": {
+      "js": "./app/scripts/**/*.js",
+      "css": "./app/styles/**/*.stylus",
+      "html": "./app/views/**/*.jade"
+    },
+    "babel": [
+      "./app/scripts/app.js"
+    ],
+    "eslint": {
+      "files": ["./app/scripts/**/*.js"],
+      "rc": "./gulp_tasks/.eslintrc"
+    },
+    "del": {
+      "all": [
+        "./app/scripts/**/*.js",
+        "./app/scripts/**/*.stylus",
+        "./app/scripts/**/*.jade"
+      ],
+      "js": ["./build/scripts/**/*.js"],
+      "css": ["./build/styles/**/*.css"],
+      "html": ["./build/views/**/*.html"]
+    }
+  },
+  "dest": {
+    "babel": "./build/scripts/",
+    "html": "./build",
+    "stylus": "./build/styles"
+  }
+}
